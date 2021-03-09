@@ -1,5 +1,6 @@
 ﻿using mvvm;
 using MvvmLab.models;
+using MvvmLab.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,26 @@ namespace MvvmLab.viewmodels
 	public class SeeDouble : ViewModelBase
 	{
 		DoubleValue _model;
+
+		public class CallPopup : ICommand
+		{
+			SeeDouble _ref;
+			public CallPopup(SeeDouble reference)
+			{
+				_ref = reference;
+			}
+
+			public event EventHandler CanExecuteChanged;
+
+			public bool CanExecute(object parameter) => true;
+
+			public void Execute(object parameter)
+			{
+				var t = new DoubleModalPopup(_ref);
+				t.ShowDialog();
+				_ref.SeeValue = t.Count;
+			}
+		}
 
 		public class MakeRandom : ICommand
 		{
@@ -45,6 +66,7 @@ namespace MvvmLab.viewmodels
 		{
             _model = init;
 			RandomCommand = new MakeRandom(this);
+			CallPopupCommand = new CallPopup(this);
 		}
 
         public int SeeValue
@@ -68,6 +90,7 @@ namespace MvvmLab.viewmodels
 		}
 
 		public MakeRandom RandomCommand { get; set; }
+		public CallPopup CallPopupCommand { get; set; }
 
 		
 	}

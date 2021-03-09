@@ -10,7 +10,8 @@
 		<Label Background="AliceBlue" HorizontalAlignment="Left" Height="23" Margin="10,45,0,0" Content="{Binding SeeDoubleVal}" VerticalAlignment="Top" Width="120"/>
 		<Slider Value="{Binding SeeValue, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="155,45,0,0" VerticalAlignment="Top" Width="200" Maximum="30" />
 		<Label Background="Aqua" Content="{Binding SeeValue}" Height="40" VerticalAlignment="Top" />
-		<Button Height="30" Content="Random" Command="{Binding RandomCommand}" VerticalAlignment="Top" Margin="455,48,37,0"/>
+		<Button Height="30" Content="Random" Command="{Binding RandomCommand}" VerticalAlignment="Top" Margin="418,48,112,0"/>
 		<TextBlock HorizontalAlignment="Left" Margin="155,68,0,0" TextWrapping="Wrap" Text="The button is constrained to high values." VerticalAlignment="Top"/>
+		<Button Height="30" Content="Change" Command="{Binding CallPopupCommand}" VerticalAlignment="Top" Margin="496,48,34,0"/>
 	</Grid>
 </UserControl>

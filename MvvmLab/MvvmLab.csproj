@@ -55,29 +55,32 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="CompressedDoubleView.xaml.cs">
+    <Compile Include="UI\CompressedDoubleView.xaml.cs">
       <DependentUpon>CompressedDoubleView.xaml</DependentUpon>
     </Compile>
     <Compile Include="models\DoubleValue.cs" />
-    <Compile Include="MultiValuesComp.xaml.cs">
+    <Compile Include="UI\DoubleModalPopup.xaml.cs">
+      <DependentUpon>DoubleModalPopup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MultiValuesComp.xaml.cs">
       <DependentUpon>MultiValuesComp.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MultiValues.xaml.cs">
+    <Compile Include="UI\MultiValues.xaml.cs">
       <DependentUpon>MultiValues.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Single.xaml.cs">
+    <Compile Include="UI\Single.xaml.cs">
       <DependentUpon>Single.xaml</DependentUpon>
     </Compile>
     <Compile Include="viewmodels\SeeDouble.cs" />
     <Compile Include="viewmodels\SeeMultiple.cs" />
     <Compile Include="viewmodels\SeeTwoStrings.cs" />
-    <Compile Include="SingleElementDouble.xaml.cs">
+    <Compile Include="UI\SingleElementDouble.xaml.cs">
       <DependentUpon>SingleElementDouble.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SingleEmentDoubleWithComponent.xaml.cs">
+    <Compile Include="UI\SingleEmentDoubleWithComponent.xaml.cs">
       <DependentUpon>SingleEmentDoubleWithComponent.xaml</DependentUpon>
     </Compile>
-    <Page Include="CompressedDoubleView.xaml">
+    <Page Include="UI\CompressedDoubleView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -93,23 +96,27 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="MultiValuesComp.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="MultiValues.xaml">
+    <Page Include="UI\DoubleModalPopup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Single.xaml">
+    <Page Include="UI\MultiValuesComp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\MultiValues.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SingleElementDouble.xaml">
+    <Page Include="UI\Single.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SingleEmentDoubleWithComponent.xaml">
+    <Page Include="UI\SingleElementDouble.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\SingleEmentDoubleWithComponent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
