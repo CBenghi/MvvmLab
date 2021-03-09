@@ -1,0 +1,26 @@
+﻿<Window x:Class="MvvmLab.MultiValuesComp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:MvvmLab="clr-namespace:MvvmLab" 
+        xmlns:local="clr-namespace:MvvmLab"
+        mc:Ignorable="d"
+        Title="MultiValues" Height="450" Width="800">
+	<Grid>
+		<DataGrid ItemsSource="{Binding DoubleValues}" Margin="24,18,26,27"
+				  AutoGenerateColumns="False"
+				  >
+			<DataGrid.Columns>
+				<DataGridTemplateColumn>
+					<DataGridTemplateColumn.CellTemplate>
+						<DataTemplate>
+							<MvvmLab:CompressedDoubleView HorizontalAlignment="Left" VerticalAlignment="Top" Width="615"/>
+						</DataTemplate>
+					</DataGridTemplateColumn.CellTemplate>
+				</DataGridTemplateColumn>
+				<DataGridTextColumn Header="Value" Binding="{Binding SeeValue, UpdateSourceTrigger=PropertyChanged}" />
+			</DataGrid.Columns>
+		</DataGrid>
+	</Grid>
+</Window>
