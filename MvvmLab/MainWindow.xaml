@@ -13,10 +13,12 @@
 		<Button Content="Double Component" HorizontalAlignment="Left" Margin="101,35,0,0" VerticalAlignment="Top" Width="149" Click="ButtonDC_Click"/>
 
 		<Button Content="Interface" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="75" Click="ButtonInt_Click"/>
-
+		<Button Content="Multi Interface" HorizontalAlignment="Left" Margin="101,70,0,0" VerticalAlignment="Top" Width="149" Click="MultiInter_Click"/>
+		
 		<Button Content="Multi" HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top" Width="75" Click="Multi_Click"/>
 		<Button Content="Multi component" HorizontalAlignment="Left" Margin="101,106,0,0" VerticalAlignment="Top" Width="149" Click="MultiComp_Click"/>
 		
+
 
 
 	</Grid>

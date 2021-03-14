@@ -6,24 +6,24 @@
              xmlns:local="clr-namespace:MvvmLab.UI" xmlns:x1="clr-namespace:MvvmLab.UI.Helpers"
 			 mc:Ignorable="d" 
 			 >
-	<Grid>
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="Auto" />
-			<ColumnDefinition Width="*" />
-		</Grid.ColumnDefinitions>
-		
-		<ComboBox ItemsSource="{Binding Path=Choice, Converter={x1:EnumToCollectionConverter}, Mode=OneTime}"
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <ComboBox ItemsSource="{Binding Path=Choice, Converter={x1:EnumToCollectionConverter}, Mode=OneTime}"
           SelectedValuePath="Value"
           DisplayMemberPath="Description"
-          SelectedValue="{Binding Path=Choice}" 
+          SelectedValue="{Binding Path=Choice, UpdateSourceTrigger=PropertyChanged}" 
 		  Margin="10" VerticalAlignment="Top" Width="160"
 				  />
 
-		<TextBox Text="{Binding Choice}" HorizontalAlignment="Left" Height="29" Margin="10" VerticalAlignment="Bottom" Width="160"/>
-		<StackPanel Grid.Column="1"  VerticalAlignment="Top" Margin="10">
-			<Grid Height="75" Width="200" Background="Aqua" Visibility="{Binding PanelOne}" />
-			<Grid Height="75" Width="200" Background="Blue" Visibility="{Binding PanelTwo}" />
-		</StackPanel>
-        
+        <TextBox Text="{Binding Choice}" HorizontalAlignment="Left" Margin="10,37,0,0" Width="160" Height="29" VerticalAlignment="Top"/>
+        <StackPanel Grid.Column="1"  VerticalAlignment="Top" Margin="10">
+            <Grid Height="75" Width="200" Background="Aqua" Visibility="{Binding PanelOne}" />
+            <Grid Height="75" Width="200" Background="Blue" Visibility="{Binding PanelTwo}" />
+        </StackPanel>
+
     </Grid>
 </UserControl>

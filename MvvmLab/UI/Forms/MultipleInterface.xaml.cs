@@ -1,6 +1,8 @@
 ﻿using MvvmLab.models.Iface;
+using MvvmLab.viewmodels;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,22 +22,21 @@ namespace MvvmLab.UI.Forms
 	/// </summary>
 	public partial class MultipleInterface : Window
 	{
-
-		IInterf value;
+		ObservableCollection<SeeInterface> values = new ObservableCollection<SeeInterface>();
+		
 
 		public MultipleInterface()
 		{
+			values.Add(new SeeInterface(new ConcreteOne()));
+			values.Add(new SeeInterface(new ConcreteTwo()));
+
 			InitializeComponent();
-			value = new ConcreteOne();
-			DataContext = new viewmodels.SeeInterface(value);
+			DataContext = values;
 		}
 
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
-			if (sender is Button b)
-			{
-				b.Content = value.GetType().Name;
-			}
+		
 		}
 	}
 }

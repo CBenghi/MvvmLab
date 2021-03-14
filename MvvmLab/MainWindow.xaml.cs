@@ -62,5 +62,11 @@ namespace MvvmLab
 			var s = new SingleInterface();
 			s.Show();
 		}
+
+		private void MultiInter_Click(object sender, RoutedEventArgs e)
+		{
+			var s = new MultipleInterface();
+			s.Show();
+		}
 	}
 }
