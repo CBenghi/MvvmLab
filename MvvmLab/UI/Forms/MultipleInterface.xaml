@@ -1,0 +1,14 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MvvmLab.UI.Forms"
+        xmlns:UI="clr-namespace:MvvmLab.UI" x:Class="MvvmLab.UI.Forms.MultipleInterface"
+        mc:Ignorable="d"
+        Title="MultipleInterface" Height="450" Width="800">
+	<Grid>
+		<UI:InterfaceControl HorizontalAlignment="Left" Height="212" Margin="101,89,0,0" VerticalAlignment="Top" Width="602"/>
+		<Button Content="Button" Height="31" Margin="0,10,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="158" Click="Button_Click"/>
+	</Grid>
+</Window>

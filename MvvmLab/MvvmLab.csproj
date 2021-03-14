@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="models\Iface\ConcreteTwo.cs" />
+    <Compile Include="models\Iface\ConcreteOne.cs" />
+    <Compile Include="models\Iface\IInterf.cs" />
     <Compile Include="UI\CompressedDoubleView.xaml.cs">
       <DependentUpon>CompressedDoubleView.xaml</DependentUpon>
     </Compile>
@@ -62,22 +65,35 @@
     <Compile Include="UI\DoubleModalPopup.xaml.cs">
       <DependentUpon>DoubleModalPopup.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\MultiValuesComp.xaml.cs">
+    <Compile Include="UI\Forms\MultipleInterface.xaml.cs">
+      <DependentUpon>MultipleInterface.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\SingleInterface.xaml.cs">
+      <DependentUpon>SingleInterface.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Helpers\EnumToCollectionConverter.cs" />
+    <Compile Include="UI\Helpers\EnumHelper.cs" />
+    <Compile Include="UI\Helpers\ValueDescription.cs" />
+    <Compile Include="UI\InterfaceControl.xaml.cs">
+      <DependentUpon>InterfaceControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\MultiValuesComp.xaml.cs">
       <DependentUpon>MultiValuesComp.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\MultiValues.xaml.cs">
+    <Compile Include="UI\Forms\MultiValues.xaml.cs">
       <DependentUpon>MultiValues.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\Single.xaml.cs">
+    <Compile Include="UI\Forms\Single.xaml.cs">
       <DependentUpon>Single.xaml</DependentUpon>
     </Compile>
     <Compile Include="viewmodels\SeeDouble.cs" />
+    <Compile Include="viewmodels\SeeInterface.cs" />
     <Compile Include="viewmodels\SeeMultiple.cs" />
     <Compile Include="viewmodels\SeeTwoStrings.cs" />
-    <Compile Include="UI\SingleElementDouble.xaml.cs">
+    <Compile Include="UI\Forms\SingleElementDouble.xaml.cs">
       <DependentUpon>SingleElementDouble.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\SingleEmentDoubleWithComponent.xaml.cs">
+    <Compile Include="UI\Forms\SingleEmentDoubleWithComponent.xaml.cs">
       <DependentUpon>SingleEmentDoubleWithComponent.xaml</DependentUpon>
     </Compile>
     <Page Include="UI\CompressedDoubleView.xaml">
@@ -100,23 +116,35 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\MultiValuesComp.xaml">
+    <Page Include="UI\Forms\MultipleInterface.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UI\MultiValues.xaml">
+    <Page Include="UI\Forms\SingleInterface.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\Single.xaml">
+    <Page Include="UI\InterfaceControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\SingleElementDouble.xaml">
+    <Page Include="UI\Forms\MultiValuesComp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Forms\MultiValues.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\SingleEmentDoubleWithComponent.xaml">
+    <Page Include="UI\Forms\Single.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Forms\SingleElementDouble.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Forms\SingleEmentDoubleWithComponent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -8,12 +8,15 @@
         Title="MainWindow" Height="256.228" Width="419.75">
 	<Grid>
 		<Button Content="Single" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-		
+
 		<Button Content="Double" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="75" Click="ButtonD_Click"/>
 		<Button Content="Double Component" HorizontalAlignment="Left" Margin="101,35,0,0" VerticalAlignment="Top" Width="149" Click="ButtonDC_Click"/>
+
+		<Button Content="Interface" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="75" Click="ButtonInt_Click"/>
+
+		<Button Content="Multi" HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top" Width="75" Click="Multi_Click"/>
+		<Button Content="Multi component" HorizontalAlignment="Left" Margin="101,106,0,0" VerticalAlignment="Top" Width="149" Click="MultiComp_Click"/>
 		
-		<Button Content="Multi" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="75" Click="Multi_Click"/>
-		<Button Content="Multi component" HorizontalAlignment="Left" Margin="101,60,0,0" VerticalAlignment="Top" Width="149" Click="MultiComp_Click"/>
 
 
 	</Grid>

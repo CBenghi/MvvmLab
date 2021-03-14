@@ -20,8 +20,6 @@ namespace MvvmLab.UI
 	/// </summary>
 	public partial class DoubleModalPopup : Window
 	{
-		private SeeDouble reference;
-
 		public DoubleModalPopup()
 		{
 			InitializeComponent();

@@ -1,4 +1,5 @@
-﻿using MvvmLab.viewmodels;
+﻿using MvvmLab.UI.Forms;
+using MvvmLab.viewmodels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,6 +54,12 @@ namespace MvvmLab
 		private void MultiComp_Click(object sender, RoutedEventArgs e)
 		{
 			var s = new MultiValuesComp();
+			s.Show();
+		}
+
+		private void ButtonInt_Click(object sender, RoutedEventArgs e)
+		{
+			var s = new SingleInterface();
 			s.Show();
 		}
 	}
